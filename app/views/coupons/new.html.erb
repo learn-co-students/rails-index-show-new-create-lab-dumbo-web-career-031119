@@ -1,0 +1,10 @@
+
+<h1> Coupon Form</h1>
+<%= form_tag "/coupons/", method: :post do %>
+  <div>coupon_code: 
+  	<input type="text" name="coupon[coupon_code]"></div>
+  <div>store: 
+  	<input type="text" name="coupon[store]"></div>
+  <div>
+  	<input type="submit" value= "Submit Coupon"></div>
+<% end %>
